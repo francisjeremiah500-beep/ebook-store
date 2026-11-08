@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AI for Real Estate Agents | Ebook by Francis Jeremiah</title>
+<style>
+:root{--bg:#faf7ff;--surface:#ffffff;--ink:#1f2937;--muted:#6b7280;--brand:#4c1d95;--pink:#db2777;--orange:#f97316;--line:#e9d5ff;--lav:#f3e8ff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e0720;--surface:#1a1033;--ink:#ede9fe;--muted:#a5a1c2;--brand:#c4b5fd;--line:#3b2a6b;--lav:#241447;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0e0720;--surface:#1a1033;--ink:#ede9fe;--muted:#a5a1c2;--brand:#c4b5fd;--line:#3b2a6b;--lav:#241447;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*:before,*:after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.6}
+.wrap{max-width:980px;margin:0 auto;padding:0 20px}
+.hero{background:linear-gradient(180deg,#0f0538 0%,#4a14a8 38%,#c81e78 72%,#ff7a3d 100%);color:#fff;padding:48px 0 56px}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:center}
+.tag{letter-spacing:.25em;font-size:12px;font-weight:700;color:#ffd166}
+h1{font-size:clamp(34px,6vw,58px);line-height:1.05;margin:10px 0 14px;font-weight:800}
+h1 span{color:#ffd166}
+.hero p{font-size:18px;max-width:34em;opacity:.95}
+.price{display:flex;align-items:baseline;gap:12px;margin:22px 0 6px}
+.price b{font-size:44px}.price small{opacity:.85}
+.btn{display:inline-block;border:0;cursor:pointer;font:inherit;font-weight:700;font-size:18px;color:#fff;background:linear-gradient(90deg,var(--pink),var(--orange));padding:15px 28px;border-radius:999px;box-shadow:0 8px 24px rgba(0,0,0,.28);text-decoration:none}
+.btn:hover{filter:brightness(1.08)}
+.secure{font-size:13.5px;margin-top:12px;opacity:.92}
+.cover{aspect-ratio:7/10;max-width:330px;width:100%;margin:0 auto;border-radius:10px;position:relative;overflow:hidden;box-shadow:0 24px 60px rgba(0,0,0,.5);background:linear-gradient(180deg,#0f0538,#4a14a8 35%,#c81e78 62%,#ff7a3d 82%,#ffc04d);transform:rotate(2deg)}
+.cover .t{position:absolute;top:9%;left:0;right:0;text-align:center;font-weight:800;color:#fff;line-height:1}
+.cover .t i{display:block;font-style:normal;font-size:12px;letter-spacing:.3em;color:#ffd166;margin-bottom:12px}
+.cover .t b{display:block;font-size:46px}.cover .t em{display:block;font-style:normal;font-size:30px;color:#ffd166;margin:4px 0}
+.sky{position:absolute;left:0;right:0;bottom:13%;height:30%;background:repeating-linear-gradient(90deg,#1a0b45 0 22px,#2a0f66 22px 30px,#1a0b45 30px 58px);clip-path:polygon(0 40%,8% 40%,8% 15%,20% 15%,20% 55%,32% 55%,32% 25%,45% 25%,45% 60%,60% 60%,60% 10%,72% 10%,72% 45%,85% 45%,85% 22%,100% 22%,100% 100%,0 100%)}
+.house{position:absolute;left:50%;bottom:13%;width:34%;transform:translateX(-50%)}
+.house .r{width:0;height:0;border-left:58px solid transparent;border-right:58px solid transparent;border-bottom:48px solid #14b8a6;margin:0 auto;filter:drop-shadow(0 0 10px #22d3ee)}
+.house .b{height:46px;background:#fff7ed;margin:0 8px;position:relative}
+.house .b:after{content:"";position:absolute;left:50%;bottom:0;width:16px;height:26px;margin-left:-8px;background:#db2777;border-radius:2px}
+.auth{position:absolute;left:0;right:0;bottom:0;height:13%;background:#0b0426;border-top:3px solid #db2777;color:#fff;text-align:center;font-weight:700;letter-spacing:.2em;font-size:13px;display:flex;align-items:center;justify-content:center}
+section{padding:54px 0}
+h2{font-size:clamp(26px,4vw,34px);color:var(--brand);margin:0 0 8px}
+.sub{color:var(--muted);margin:0 0 26px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px}
+.card h3{margin:0 0 6px;font-size:17px;color:var(--brand)}.card p{margin:0;color:var(--muted);font-size:15px}
+.sample{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:28px 28px 8px;overflow:hidden}
+.sample h3{margin:0 0 4px;color:var(--pink);font-size:13px;letter-spacing:.15em}
+.sample h4{font-size:24px;margin:0 0 12px;color:var(--brand)}
+.sample p{margin:0 0 12px}
+.fade{max-height:250px;overflow:hidden;-webkit-mask-image:linear-gradient(#000 45%,transparent);mask-image:linear-gradient(#000 45%,transparent)}
+.lock{text-align:center;padding:6px 0 26px;margin-top:-6px}
+.lock .ic{font-size:30px}.lock p{margin:4px 0 14px;font-weight:600}
+.lock .btn{box-shadow:none}
+.toc{columns:2;column-gap:30px;padding-left:20px;margin:0}.toc li{margin-bottom:6px;break-inside:avoid}
+details{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin-bottom:10px}
+summary{cursor:pointer;font-weight:600;color:var(--brand)}details p{margin:10px 0 0;color:var(--muted)}
+.cta{background:linear-gradient(135deg,#4c1d95,#db2777);color:#fff;border-radius:20px;padding:40px 24px;text-align:center}
+.cta h2{color:#fff}.cta p{opacity:.92;margin:0 0 20px}
+footer{padding:28px 0 40px;color:var(--muted);font-size:13.5px;text-align:center}
+.modal{position:fixed;inset:0;background:rgba(10,4,30,.7);display:none;align-items:center;justify-content:center;padding:20px;z-index:20}
+.modal.on{display:flex}.modal div{background:var(--surface);color:var(--ink);border-radius:16px;padding:26px;max-width:380px;text-align:center}
+.modal h3{margin:0 0 8px;color:var(--brand)}.modal button{margin-top:10px}
+@media(max-width:760px){.hero .wrap{grid-template-columns:1fr}.cover{order:-1;max-width:240px}.toc{columns:1}.hero{padding-top:30px}}
+</style>
+</head>
+<body>
+<header class="hero"><div class="wrap">
+ <div>
+  <div class="tag">THE PRACTICAL GUIDE</div>
+  <h1>AI for <span>Real Estate</span> Agents</h1>
+  <p>Write faster. Follow up smarter. Close more deals. A 32-page guide with ready-to-use prompts, templates and a 30-day action plan.</p>
+  <div class="price"><b id="price">$9.99</b><small>one-time payment &middot; instant PDF download</small></div>
+  <button class="btn" data-buy>Buy now with card</button>
+  <div class="secure">&#128274; Secure checkout. Mastercard and Visa accepted. Your card details are entered on the payment provider’s protected page, never on this site.</div>
+ </div>
+ <div class="cover" aria-label="Book cover">
+  <div class="t"><i>THE PRACTICAL GUIDE</i><b>AI FOR</b><em>REAL ESTATE</em><b>AGENTS</b></div>
+  <div class="sky"></div><div class="house"><div class="r"></div><div class="b"></div></div>
+  <div class="auth">FRANCIS JEREMIAH</div>
+ </div>
+</div></header>
+
+<section><div class="wrap">
+ <h2>What you’ll get</h2><p class="sub">Practical skills you can use on your very next listing.</p>
+ <div class="grid">
+  <div class="card"><h3>Prompt library</h3><p>12 copy-and-paste prompts for listings, emails, social posts and client messages.</p></div>
+  <div class="card"><h3>Listing copy that sells</h3><p>Turn property facts into polished descriptions in minutes, not hours.</p></div>
+  <div class="card"><h3>Follow-up systems</h3><p>Email sequences and message templates that keep leads warm.</p></div>
+  <div class="card"><h3>30-day action plan</h3><p>A simple week-by-week schedule to build lasting AI habits.</p></div>
+ </div>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap">
+ <h2>Read a free preview</h2><p class="sub">Here’s a taste of Chapter 1. Unlock the full book to keep reading.</p>
+ <div class="sample">
+  <h3>CHAPTER 1</h3><h4>Understanding AI in Plain English</h4>
+  <div class="fade">
+   <p>When people say “AI” in the context of everyday work, they usually mean a chat assistant: a program you type to in ordinary language, and which replies with text, ideas, summaries or images.</p>
+   <p>The important thing to grasp is that an AI assistant is not a search engine and not a person. It generates a response that fits your request. Most of the time that response is excellent. Occasionally it is confidently wrong. Knowing the difference is the most valuable skill in this book.</p>
+   <p>The best way to think about AI is as a very fast junior assistant. It can get you roughly eighty percent of the way to a finished piece in a couple of minutes. The last twenty percent is where you add your voice, your local knowledge and your accuracy checks.</p>
+  </div>
+  <div class="lock"><div class="ic">&#128274;</div><p>The rest of this chapter and 10 more are locked</p><button class="btn" data-buy>Unlock the full ebook</button></div>
+ </div>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap">
+ <h2>Inside the book</h2><p class="sub">Eleven focused chapters plus two bonus appendices.</p>
+ <ol class="toc">
+  <li>Understanding AI in Plain English</li><li>Building Your AI Toolkit</li><li>The Art of the Prompt</li><li>Listing Descriptions That Sell</li>
+  <li>Social Media and Content Marketing</li><li>Lead Generation and Follow-Up</li><li>Market Analysis and Client Reports</li><li>Communicating with Buyers and Sellers</li>
+  <li>Automating Your Business</li><li>Ethics, Law and Staying Human</li><li>Your 30-Day Action Plan</li><li>Bonus: Prompt Library and Glossary</li>
+ </ol>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap">
+ <h2>Questions</h2><p class="sub">&nbsp;</p>
+ <details><summary>How do I pay?</summary><p>Click “Buy now”, enter your Mastercard or Visa details on the secure checkout page, and you’ll be taken to your download.</p></details>
+ <details><summary>What format is the ebook?</summary><p>A PDF that works on phones, tablets and computers. Read it anywhere, offline.</p></details>
+ <details><summary>Do I need technical skills?</summary><p>No. If you can write an email, you can use every prompt in the book.</p></details>
+ <details><summary>Is this legal or financial advice?</summary><p>No. It’s general education. Rules vary by country and brokerage, so always check the regulations that apply to you.</p></details>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap"><div class="cta">
+ <h2>Start working smarter today</h2><p>Instant download. Secure card payment.</p>
+ <button class="btn" data-buy>Buy now with card</button>
+</div></div></section>
+
+<footer><div class="wrap">&copy; 2026 Francis Jeremiah. All rights reserved.</div></footer>
+
+<div class="modal" id="modal"><div><h3>Checkout is almost ready</h3><p>Card payments are being connected. Please check back very soon.</p><button class="btn" id="close">OK</button></div></div>
+
+<script>
+// STORE SETTINGS: paste your payment-provider checkout link between the quotes to switch on card payments.
+var CHECKOUT_URL = "";
+var PRICE = "$9.99";
+document.getElementById("price").textContent = PRICE;
+var modal = document.getElementById("modal");
+document.querySelectorAll("[data-buy]").forEach(function(b){
+  b.addEventListener("click", function(){
+    if (CHECKOUT_URL) { window.open(CHECKOUT_URL, "_blank", "noopener"); } else { modal.classList.add("on"); }
+  });
+});
+document.getElementById("close").addEventListener("click", function(){ modal.classList.remove("on"); });
+modal.addEventListener("click", function(e){ if (e.target === modal) modal.classList.remove("on"); });
+</script>
+</body>
+</html>
